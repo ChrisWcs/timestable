@@ -1,11 +1,16 @@
 import React from 'react';
 
-const style = {
-    textAlign: "center"
-};
+const rowStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+}
 
 const Answer = ({x, y}) => (
-    <h1>{x} x {y} = {x*y}</h1>
+    <div style={rowStyle}>
+        <h1>{x} x {y} = {x*y}</h1>
+    </div>
 );
 
 export default Answer;
