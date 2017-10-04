@@ -5,7 +5,8 @@ const style = {
     background: "white",
     width: "50px",
     height: "50px",
-    border: "solid 1px black"
+    border: "solid 1px black",
+    cursor: "pointer"
 };
 
 const Cell = ({ num, func }) => (

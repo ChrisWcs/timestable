@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Table from './Table';
-
+import Answer from './Answer';
 
 class App extends Component {
     constructor(props){
@@ -30,6 +30,7 @@ class App extends Component {
         return(
             <div>
                 <Table func={this.show} hor={this.state.hor} ver={this.state.ver} />
+                <Answer x={this.state.curX} y={this.state.curY}/>
             </div>
         );
     }

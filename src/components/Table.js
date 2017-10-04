@@ -19,7 +19,7 @@ const columnStyle = {
 
 const Table = ({ hor, ver, func }) => (
     <div style={columnStyle}>
-        { ver.map( y => <div key={y} style={rowStyle} >{ hor.map( x => <Cell key={x*yks} num={x*y} func={func(x, y)}/>) }</div> ) }
+        { ver.map( y => <div key={y} style={rowStyle} >{ hor.map( x => <Cell key={x*y} num={x*y} func={func(x, y)}/>) }</div> ) }
     </div>
 );
 
